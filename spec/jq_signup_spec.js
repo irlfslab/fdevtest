@@ -1,6 +1,4 @@
-/*
-Describe a test for sign up form 
-*/
+/*Describe a test for sign up form */
 describe("Test function Validate", function () {
 
    describe("Return true or false", function () {
