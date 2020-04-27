@@ -3,7 +3,7 @@ describe("Test function Validate", function () {
 
    describe("Return true or false", function () {
       // Specs are defined by calling the global Jasmine function it
-      //Scenario 1 - test function should exist 
+      //Scenario 1 - test function "validate" should exist 
       it("should exist", function () {
           /*
           - Expectations are built with the function expect which takes a value, called the actual. 
@@ -30,7 +30,7 @@ describe("Test function Validate", function () {
       expect(result).toBe(false);
     });
 
-    //Scenario 4 - test name with 21 chars
+    //Scenario 4 - test name > 20 chars
     it("should return false when called validate('abcdefghijklmnopqrstu', 'name')", function () {
       var result = validate('abcdefghijklmnopqrstu','name')
       expect(result).toBe(false);
