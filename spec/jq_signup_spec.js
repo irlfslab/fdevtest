@@ -42,7 +42,7 @@ describe("Test function Validate", function () {
       expect(result).toBe(false);
     });
 
-    //Scenario 6 - test regular email with domain
+    //Scenario 6 - test email with domain
     it("should return true when called validate('aa@gmail.com', 'email')", function () {
       var result = validate('aa@gmail.com','email')
       expect(result).toBe(true);
