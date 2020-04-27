@@ -13,31 +13,31 @@ describe("Test function Validate", function () {
       }); // end first should
 
     //Scenario 1 - test name with 2 chars
-    it("should return true when called validate('aa', 'name') with 2 chars", function () {
+    it("should return true when called validate('aa', 'name')", function () {
       var result = validate('aa','name')
       expect(result).toBe(true);
     });
     
     //Scenario 2 - test name with 20 chars
-    it("should return true when called validate('abcdefghijklmnopqrst', 'name') with 20 chars", function () {
+    it("should return true when called validate('abcdefghijklmnopqrst', 'name')", function () {
       var result = validate('abcdefghijklmnopqrst','name')
       expect(result).toBe(true);
     });
     
     //Scenario 3 - test name with 1 char
-    it("should return false when called validate('a', 'name') with 1 char", function () {
+    it("should return false when called validate('a', 'name')", function () {
       var result = validate('a','name')
       expect(result).toBe(false);
     });
 
     //Scenario 4 - test name with 21 chars
-    it("should return false when called validate('abcdefghijklmnopqrstu', 'name') with 21 chars", function () {
+    it("should return false when called validate('abcdefghijklmnopqrstu', 'name')", function () {
       var result = validate('abcdefghijklmnopqrstu','name')
       expect(result).toBe(false);
     });
     
     //Scenario 5 - test name with number
-    it("should return false when called validate('1', 'name') with number", function () {
+    it("should return false when called validate('1', 'name')", function () {
       var result = validate('1','name')
       expect(result).toBe(false);
     });
@@ -49,7 +49,7 @@ describe("Test function Validate", function () {
     });
 
     //Scenario 7 - test email without domain
-    it("should return false when called validate('aa', 'email') without domain", function () {
+    it("should return false when called validate('aa', 'email')", function () {
       var result = validate('aa','email')
       expect(result).toBe(false);
     });
@@ -85,19 +85,19 @@ describe("Test function Validate", function () {
     });
 
     //Scenario 13 - test phone with 10 digit 
-    it("should return true when called validate('1234567890', 'phone') with 10 digit", function () {
+    it("should return true when called validate('1234567890', 'phone')", function () {
       var result = validate('1234567890', 'phone')
       expect(result).toBe(true);
     });
 
     //Scenario 14 - test phone with 9 digit
-    it("should return false when called validate('123456789', 'phone') with 9 digit", function () {
+    it("should return false when called validate('123456789', 'phone')", function () {
       var result = validate('123456789', 'phone')
       expect(result).toBe(false);
     });
     
     //Scenario 15 - test phone with char
-    it("should return false when called validate('aa', 'phone') with char", function () {
+    it("should return false when called validate('aa', 'phone')", function () {
       var result = validate('aa', 'phone')
       expect(result).toBe(false);
     });   
